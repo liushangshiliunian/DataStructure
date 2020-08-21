@@ -8,9 +8,11 @@ public class BinaryTreeDemo {
         HeroNode node3 = new HeroNode(3, "卢俊义");
         HeroNode node4 = new HeroNode(4, "林冲");
         HeroNode node5 = new HeroNode(5, "关胜");
+        HeroNode node6 = new HeroNode(6, "武松");
 
         root.setLeft(node2);
         root.setRight(node3);
+        node2.setLeft(node6);
         node3.setRight(node4);
         node3.setLeft(node5);
 
@@ -19,8 +21,8 @@ public class BinaryTreeDemo {
 //        binaryTree.preOrderList();
 
 //        binaryTree.infixOrderList();
-//
-//        binaryTree.postOrderList();
+
+        binaryTree.postOrderList();
 
 //        HeroNode heroNode = binaryTree.preOrderSearch(5);
 //         HeroNode heroNode = binaryTree.infixOrderSearch(5);
@@ -31,9 +33,9 @@ public class BinaryTreeDemo {
 //            System.out.println("没有找到相对应的节点");
 //        }
 
-        binaryTree.delHearNo(5);
-        binaryTree.delHearNo(3);
-        binaryTree.preOrderList();
+//        binaryTree.delHearNo(5);
+//        binaryTree.delHearNo(3);
+//        binaryTree.preOrderList();
 
     }
 
